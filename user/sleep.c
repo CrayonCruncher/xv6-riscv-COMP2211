@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     }
     else
     {
-        printf('Invalid argument(s) passed');
+        printf("Invalid argument(s) passed");
     }
     exit(0);
 }
