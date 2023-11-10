@@ -14,13 +14,14 @@ int main() {
         char received_byte;
         read(p[0], &received_byte, 1);
         int my_pid = getpid();
-        printf("%d:Received pong, %c\n", my_pid, received_byte);
+        printf("%d:Received pong, %c \n", my_pid, received_byte);
     }
     else if (pid == 0) //child
     {
-        char received_byte = read(p[0], &our_byte, 1);
+        char received_byte;
+        read(p[0], &received_byte, 1);
         int my_pid = getpid();
-        printf("%d:Received ping, %c\n", my_pid, received_byte);
+        printf("%d:Received ping, %c \n", my_pid, received_byte);
         if (received_byte == 'P')
         {
             received_byte = 'R';
