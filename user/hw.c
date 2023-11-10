@@ -5,6 +5,6 @@ int main(int argc, char *argv[]) {
     // Insert code here.
     // You can use print as normal.
     // Terminate the process.
-    printf("Hello, world!");
+    printf("Hello, world!\n");
     exit(0);
 }
