@@ -25,6 +25,7 @@ int main() {
         {
             received_byte = 'R';
         }
-        write(p[1], received_byte, 1);
+        write(p[1], &received_byte, 1);
+        exit(0);
     }
     exit(0);
